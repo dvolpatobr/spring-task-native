@@ -2,4 +2,5 @@
 
 native-image --version
 
-scripts/compileWithMaven.sh && scripts/test.sh
+scripts/compileWithMaven.sh
+#&& scripts/test.sh
