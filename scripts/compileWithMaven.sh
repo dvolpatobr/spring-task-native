@@ -13,7 +13,8 @@ mkdir -p target/native-image
 echo "Packaging ${PWD##*/} with Maven"
 mvn -ntp -Pnative-image package -s /tmp/settings.xml &> target/native-image/output.txt
 
-if [[ -f target/${PWD##*/} ]]
+#if [[ -f target/${PWD##*/} ]]
+if [[ -f target/build-native-image ]]
 then
   printf "${GREEN}SUCCESS${NC}\n"
 else
