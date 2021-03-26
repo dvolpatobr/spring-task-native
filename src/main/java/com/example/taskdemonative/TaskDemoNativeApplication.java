@@ -1,6 +1,6 @@
 package com.example.taskdemonative;
 
-import org.mariadb.jdbc.util.DefaultOptions;
+import org.mariadb.jdbc.internal.util.DefaultOptions;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.task.batch.configuration.JobLaunchCondition;
@@ -22,10 +22,10 @@ import static org.springframework.nativex.hint.AccessBits.ALL;
                 "org.springframework.cloud.task.batch.configuration.JobLaunchCondition",
                 "org.springframework.cloud.task.batch.configuration.JobLaunchCondition$SpringBatchJobCondition",
                 "org.springframework.cloud.task.batch.configuration.JobLaunchCondition$FailOnJobFailureCondition",
-                "org.mariadb.jdbc.util.DefaultOptions"
+                "org.mariadb.jdbc.internal.util.DefaultOptions"
         }, packageNames = {
                 "org.springframework.cloud.task.batch.configuration",
-                "org.mariadb.jdbc.util"
+                "org.mariadb.jdbc.internal.util"
         }, initTime = InitializationTime.RUN),
         types = {
                 @TypeHint(types = {JobLaunchCondition.class, DefaultOptions.class}, access =
@@ -35,7 +35,7 @@ import static org.springframework.nativex.hint.AccessBits.ALL;
 @TypeHint(types = {JobLaunchCondition.class, DefaultOptions.class},
         typeNames = {"org.springframework.cloud.task.batch.configuration.JobLaunchCondition$SpringBatchJobCondition",
                 "org.springframework.cloud.task.batch.configuration.JobLaunchCondition$FailOnJobFailureCondition",
-                "org.mariadb.jdbc.util.DefaultOptions"},
+                "org.mariadb.jdbc.internal.util.DefaultOptions"},
         access = ALL)
 @EnableTask
 public class TaskDemoNativeApplication {
