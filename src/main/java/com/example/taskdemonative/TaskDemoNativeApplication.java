@@ -40,8 +40,6 @@ public class TaskDemoNativeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TaskDemoNativeApplication.class, args);
 
-		DefaultOptions
-
 
 	}
 
