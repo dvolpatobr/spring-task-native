@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2020.0.2</spring-cloud.version>
-		<spring-native.version>0.9.1-SNAPSHOT</spring-native.version>
+		<spring-native.version>0.9.2-SNAPSHOT</spring-native.version>
 
 		<!-- Customize Spring Boot classifier, useful in order to avoid a clash between Spring Boot repackaging and native-image-maven-plugin -->
 		<classifier/>
