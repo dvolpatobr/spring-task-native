@@ -6,6 +6,8 @@ FROM  centos:latest
 RUN yum install zip -y
 RUN yum install unzip -y
 
+RUN yum groupinstall 'Development Tools' -y
+
 #GRAAL VM
 RUN curl -s "https://get.sdkman.io" | bash
 RUN cat "$HOME/.sdkman/bin/sdkman-init.sh"
